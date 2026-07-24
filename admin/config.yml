@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site_content"
+    label: "Website Content"
+    files:
+      - name: "updates"
+        label: "Latest Updates & Offers"
+        file: "data/updates.json"
+        format: "json"
+        fields:
+          - name: "posts"
+            label: "Posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Post title", widget: "string" }
+              - { name: "date", label: "Date shown", widget: "string", hint: "Example: 24 July 2026" }
+              - { name: "message", label: "Message", widget: "text" }
+              - { name: "image", label: "Photo (optional)", widget: "image", required: false }
