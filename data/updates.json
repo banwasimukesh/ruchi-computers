@@ -5,6 +5,12 @@
       "date": "24 July 2026",
       "message": "Computer, printing and online services are available for our local community.",
       "image": ""
+    },
+    {
+      "image": "/uploads/generated-image-1-2-.png",
+      "title": "Testing",
+      "date": "25.06.2027",
+      "message": "Testing File"
     }
   ]
 }
